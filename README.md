@@ -1,0 +1,2 @@
+# LinqExtensions
+Useful Linq extensions
