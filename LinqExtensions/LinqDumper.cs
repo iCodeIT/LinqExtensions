@@ -24,7 +24,7 @@ namespace LinqExtensions
     private static IEnumerable<T> InternDump<T>(this IEnumerable<T> input, Func<T, string> toString, string dumpName)
     {
       Debug.WriteLine("Dump:" + dumpName);
-      foreach (var item in input)
+      foreach (T item in input)
       {
         Debug.WriteLine(dumpName + ": " + (ShowWhiteSpace ? '[' + toString(item) + ']' : toString(item)));
         yield return item;

@@ -49,8 +49,30 @@ namespace LinqExtensions
       static TElement[] instance;
 
       public static IEnumerable<TElement> Instance => instance ?? (instance = new TElement[0]);
-      }
+    }
 
     public static bool In<T>(this T element, IEnumerable<T> collection) => collection.Contains(element);
+
+    public static TSource MinBy<TSource, TBy>(this IEnumerable<TSource> source, Func<TSource, TBy> selector)
+    {
+      return MinBy(source, selector, null);
+    }
+
+    public static TSource MinBy<TSource, TBy>(this IEnumerable<TSource> source, Func<TSource, TBy> selector, IComparer<TBy> comparer)
+    {
+      comparer = comparer ?? Comparer<TBy>.Default;
+      return source.Aggregate((x, y) => comparer.Compare(selector(x), selector(y)) < 0 ? x : y);
+    }
+
+    public static TSource MaxBy<TSource, TBy>(this IEnumerable<TSource> source, Func<TSource, TBy> selector)
+    {
+      return MaxBy(source, selector, null);
+    }
+
+    public static TSource MaxBy<TSource, TBy>(this IEnumerable<TSource> source, Func<TSource, TBy> selector, IComparer<TBy> comparer)
+    {
+      comparer = comparer ?? Comparer<TBy>.Default;
+      return source.Aggregate((x, y) => comparer.Compare(selector(x), selector(y)) > 0 ? x : y);
+    }
   }
 }

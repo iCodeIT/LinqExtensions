@@ -26,6 +26,12 @@ namespace LinqExtensionTest
         .Distinct().Dump(false, "Distinct")
         .OrderBy(x => x).Dump(false, "Ordered").ToList();
 
+      Console.WriteLine("3 in numbers: " + 3.In(numbers));
+      Console.WriteLine("10 in numbers: " + 10.In(numbers));
+
+      Console.WriteLine("MaxBy:"+numbers.MaxBy(x => x));
+      Console.WriteLine("MinBy:" + numbers.MinBy(x => x));
+
       Console.ReadKey();
     }
   }
