@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LinqExtensionTest</RootNamespace>
     <AssemblyName>LinqExtensionTest</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LinqExtensions\LinqExtensions.csproj">
-      <Project>{8FD34834-75D4-408C-AA10-F5EE638E98EC}</Project>
+      <Project>{7D95E07A-E3BE-437B-BDA2-F4E565A8897D}</Project>
       <Name>LinqExtensions</Name>
     </ProjectReference>
   </ItemGroup>

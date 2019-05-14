@@ -1,8 +1,7 @@
-﻿using System;
+﻿using LinqExtensions;
+using System;
 using System.Diagnostics;
 using System.Linq;
-
-using LinqExtensions;
 
 namespace LinqExtensionTest
 {
