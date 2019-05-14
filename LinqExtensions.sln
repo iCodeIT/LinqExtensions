@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqExtensionTest", "LinqExtensionTest\LinqExtensionTest.csproj", "{D368783A-5C5B-427B-8E57-ADC5AAF2B389}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqExtensionTestApp", "LinqExtensionTest\LinqExtensionTestApp.csproj", "{D368783A-5C5B-427B-8E57-ADC5AAF2B389}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqExtensions", "LinqExtensions\LinqExtensions.csproj", "{7D95E07A-E3BE-437B-BDA2-F4E565A8897D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqExtensionUnitTest", "LinqExtensionUnitTest\LinqExtensionUnitTest.csproj", "{B73969FE-CC44-4918-8B1B-A492A382D00F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7D95E07A-E3BE-437B-BDA2-F4E565A8897D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D95E07A-E3BE-437B-BDA2-F4E565A8897D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D95E07A-E3BE-437B-BDA2-F4E565A8897D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B73969FE-CC44-4918-8B1B-A492A382D00F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B73969FE-CC44-4918-8B1B-A492A382D00F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B73969FE-CC44-4918-8B1B-A492A382D00F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B73969FE-CC44-4918-8B1B-A492A382D00F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
